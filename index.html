@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>play-rock-paper-scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-app">
+      <div class="game-header">
+        <p class="footer-copyright">
+          &copy; 2024
+          <a
+            href="https://www.linkedin.com/in/alex-githinji-452221274"
+            target="_blank"
+            >Alex Githinji</a
+          >
+        </p>
+        <p class="score-board" id="score-board">computer 0 0 player</p>
+      </div>
+      <div class="game-container">
+        <div class="choice-box top-margin" id="comp-choice-box">
+          <p class="container-title">Computer</p>
+          <p class="emoji" id="computer-choice-emoji">✌️</p>
+        </div>
+        <p class="game-result" id="game-result">
+          currently draw
+        </p>
+        <div class="choice-box" id="player-choice-box">
+          <p class="container-title">Player</p>
+          <p class="emoji" id="player-choice-emoji">✌️</p>
+        </div>
+      </div> 
+      <div class="button-container"></div>
+      <div class="options">
+        <button class="option-button" id="rock-choice">
+          <p class="rock-emoji">✊</p>
+          <p class="option-text">rock</p>
+        </button>
+        <button class="option-button" id="paper-choice">
+          <p class="option-emoji">✋</p>
+          <p class="option-text">paper</p>
+        </button>
+        <button class="option-button" id="scissors-choice">
+          <p class="option-emoji">✌️</p>
+          <p class="option-text">scissors</p>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

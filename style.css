@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap";
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-family: "Press Start 2P", sans-serif;
+}
+.top-margin {
+  margin-top: 3rem;
+}
+#game-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #9ec91e;
+  width: 45vw;
+  margin: 0 auto;
+  position: relative;
+}
+.game-container {
+  width: 100%;
+}
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.score-board,
+.footer-copyright {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 28.125em) {
+  .game-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.emoji {
+  font-size: 10rem;
+  --size: 13rem;
+  border: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-result {
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: #f2c244;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.options {
+  margin-top: 2.5rem;
+}
+.option-button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.rock-emoji {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.option-emoji {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.option-text {
+  font-family: "Press Start 2P", sans-serif;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 56.25em) {
+  #game-app {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 21.875em) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
