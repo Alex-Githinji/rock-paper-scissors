@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
       (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
       playerScore++;
-      return 'You win!';
+      return 'You win';
     } else {
       compScore++;
-      return 'Computer wins!';
+      return 'Computer win!';
     }
   }
 
