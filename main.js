@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
   let compScore = 0;
   let playerScore = 0;
 
@@ -20,19 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
       (playerChoice === 'scissors' && computerChoice === 'paper')
     ) {
       playerScore++;
-      return 'you win';
+      return 'You win!';
     } else {
       compScore++;
-      return 'computer wins';
+      return 'Computer wins!';
     }
   }
 
   function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
     const result = determineWinner(playerChoice, computerChoice);
-    document.getElementById('game-result').innerHTML = `  ${result}`;
+    document.getElementById('game-result').textContent = result;
     document.getElementById('player-choice-emoji').textContent = getEmoji(playerChoice);
-    document.getElementById('comp-choice-emoji').textContent = getEmoji(computerChoice);
+    document.getElementById('computer-choice-emoji').textContent = getEmoji(computerChoice);
     updateScoreboard();
   }
 
