@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return 'You win';
     } else {
       compScore++;
-      return 'Computer win!';
+      return 'Computer win';
     }
   }
 
